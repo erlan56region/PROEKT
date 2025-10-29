@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | ITCOFE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Индикатор загрузки -->
+    <div class="loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">ITCOFE</div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Анимированный фон -->
+    <div class="animated-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                ITCOFE
+                <div class="logo-dot"></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О нас</a></li>
+                <li><a href="index.html#projects">Проекты</a></li>
+                <li><a href="index.html#tech">Технологии</a></li>
+                <li><a href="index.html#contact">Контакты</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="index.html#projects">Проекты</a></li>
+            <li><a href="index.html#tech">Технологии</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-history"></i>
+                    Основана в 2010 году
+                </div>
+                <h1 class="hero-title">Наша история</h1>
+                <p class="hero-subtitle">От маленькой команды энтузиастов до мирового лидера в области инновационных технологий. Наш путь — это история смелых решений и революционных открытий.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about-content">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">О компании</div>
+                <h2 class="section-title">Кто мы такие</h2>
+                <p class="section-subtitle">ITCOFE — это сообщество инноваторов, исследователей и мечтателей</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Наша миссия</h3>
+                    <p>Создавать технологии, которые решают глобальные проблемы человечества и открывают новые возможности для развития цивилизации.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Наше видение</h3>
+                    <p>Мир, где технологии служат не просто инструментами, а катализаторами позитивных изменений в жизни каждого человека.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Наши ценности</h3>
+                    <p>Инновации, прозрачность, сотрудничество и ответственность — фундамент нашей корпоративной культуры.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team" style="background: rgba(30, 30, 30, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Наша команда</div>
+                <h2 class="section-title">Лидеры инноваций</h2>
+                <p class="section-subtitle">Талантливые умы, которые двигают технологический прогресс вперед</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Алексей Волков</h3>
+                    <p class="member-role">Генеральный директор</p>
+                    <p class="member-bio">Основатель компании, визионер в области квантовых вычислений и искусственного интеллекта.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Мария Смирнова</h3>
+                    <p class="member-role">Технический директор</p>
+                    <p class="member-bio">Эксперт в области машинного обучения и нейронных сетей с 15-летним опытом.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Дмитрий Петров</h3>
+                    <p class="member-role">Директор по исследованиям</p>
+                    <p class="member-bio">Ведущий специалист в области биотехнологий и наноинженерии.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Достижения -->
+    <section id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Достижения</div>
+                <h2 class="section-title">Наши успехи</h2>
+                <p class="section-subtitle">Моменты, которыми мы гордимся</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Основание компании</h3>
+                        <p>ITCOFE начала свой путь с команды из 5 человек и офиса в 30 квадратных метров.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h3>Первый крупный проект</h3>
+                        <p>Запуск платформы для анализа больших данных для медицинских исследований.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>Прорыв в AI</h3>
+                        <p>Разработка собственной архитектуры нейронных сетей, превосходящей существующие аналоги.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Мировое признание</h3>
+                        <p>Капитализация компании превысила $30 миллиардов, проекты реализуются в 15 странах мира.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ITCOFE</h3>
+                    <p>Создаем технологии, которые определяют будущее человечества. 15 лет инноваций, 150+ прорывных проектов, бесконечные возможности.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="index.html#projects">Проекты</a></li>
+                        <li><a href="index.html#tech">Технологии</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Ресурсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 ITCOFE Technologies. Все права защищены. Капитализация: $30+ млрд.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
